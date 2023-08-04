@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="크래프톤 정글 입학시험 CSS 예제 따라하기">
+	<meta name="author" content="seojin">
+	<meta name="keyword" content="크래프톤 정글, HTML, CSS">
+	<title>로그인 페이지</title>
+</head>
+
+<body>
+	<main class="main-container">
+		<div class="image-container">
+			<h3>로그인 페이지</h3>
+			<h5>아이디, 비밀번호를 입력해주세요</h5>
+		</div>
+
+		<form class="form-container" action="/login" method="POST">
+			<div>
+				<label for="id">ID</label>
+				<input name="id" type="text">
+			</div>
+			<div>
+				<label for="password">PW</label>
+				<input name="password" type="password">
+			</div>
+			<div>
+				<input type="submit" value="로그인하기">
+			</div>
+		</form>
+	</main>
+</body>
+
+<style>
+	body {
+		padding: 0%;
+		margin: 0%;
+		background-color: blanchedalmond;
+		padding: 3rem;
+	}
+	.main-container {
+		width: 400px;
+		position: relative;
+	}
+	.image-container {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(./Agesilaus-II-cover.jpeg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: white;
+		font-size: x-large;
+		font-family: Arial, Helvetica, sans-serif;
+		border-radius: 0.75rem;
+	}
+	.form-container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		padding-top: 1.5rem;
+	}
+</style>
+
+</html>
