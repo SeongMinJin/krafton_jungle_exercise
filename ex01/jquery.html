@@ -37,12 +37,12 @@
 			// 5. 만약 이메일이 아니면 '이메일이 아닙니다.' 라는 얼럿 띄우기
 
 			const val = $("#input-q2").val();
-			
+
 			if (!val.includes("@")) {
 				alert("이메일이 아닙니다.");
 				return;
 			}
-			
+
 			if (val.indexOf(".", val.indexOf("@")) === -1) {
 				alert("이메일이 아닙니다.");
 				return;
@@ -72,7 +72,6 @@
 			// 1. names-q3의 내부 태그를 모두 비운다.(jQuery의 $('....').empty()를 이용하면 굿!)
 			$("#names-q3").empty();
 		}
-
 	</script>
 
 </head>
